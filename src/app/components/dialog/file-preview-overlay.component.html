@@ -1,0 +1,20 @@
+<div class="main-content">
+  <app-close-button></app-close-button>
+  <h4>Add new user</h4>
+  <form class="main-content__form" [formGroup]="form">
+    <div class="main-content__form-group">
+      <label for="name">User name</label>
+      <input type="text" id="name" formControlName="name"/>
+    </div>
+    <div class="main-content__form-group">
+      <label for="name">User password</label>
+      <input type="text" id="text"  formControlName="password"/>
+    </div>
+    <div class="main-content__form-controls">
+        <button [disabled]="form.invalid" (click)="onAddEvent()" type="button">
+          <span *ngIf="!isEddit">Add +</span>
+          <span *ngIf="isEddit">Remove</span>
+        </button>
+    </div>
+  </form>
+</div>

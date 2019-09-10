@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Gotham Pro", "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+  &.dark-backdrop {
+    background: #000;
+    opacity: 0.85 !important;
+  }
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
